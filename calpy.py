@@ -1,3 +1,4 @@
+
 from tkinter import *
 root = Tk()
 root.title("Calpy")
@@ -12,6 +13,8 @@ def result(r):
     
 def button_C(e):
     e1.delete(0,END)
+def button_D(e):
+    pass
 
 
 b7 = Button(root,text="7",command=lambda:cal("7"),width=5,height=2,font="Arial 16",bd=3)
@@ -49,5 +52,7 @@ b_sub = Button(root,text="-",command=lambda:cal("-"),width=5,height=2,font="Aria
 b_sub.grid(row=4,column=2)
 b_equal = Button(root,text="=",command=lambda:result(eval(e1.get())),width=5,height=2,font="Arial 16",bd=3)
 b_equal.grid(row=4,column=3)
+# b_d = Button(root,text="Delete",command=lambda:button_D(e1.get()),width=5,height=2,font="Arial 16",bd=3)
+# b_d.grid(row=5,columnspan=4)
 
 root.mainloop()
