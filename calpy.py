@@ -1,16 +1,16 @@
-
 from tkinter import *
 root = Tk()
 root.title("Calpy")
-#root.geometry("500x500")
 e1=Entry(root,width=16,justify="right",font="serif 25",bd=7,bg="cadet blue")
 e1.grid(row=0,column=0,columnspan=4)
+
 def cal(button):
     e1.insert(16,button)
+
 def result(r):
     e1.delete(0,END)
     e1.insert(16,r)
-    
+
 def button_C(e):
     e1.delete(0,END)
 
@@ -18,7 +18,6 @@ def button_D(e):
     txt=e1.get()[:-1]
     e1.delete (0,END)
     e1.insert(0,txt)
-
 
 b7 = Button(root,text="7",command=lambda:cal("7"),width=5,height=2,font="Arial 16",bd=3)
 b7.grid(row=1,column=0)
