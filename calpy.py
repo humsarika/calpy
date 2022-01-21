@@ -45,7 +45,6 @@ b3 = Button(root,text="3",command=lambda:cal("3"),width=5,height=2,font="Arial 1
 b3.grid(row=3,column=2)
 b_add = Button(root,text="+",command=lambda:cal("+"),width=5,height=2,font="Arial 16",bd=3)
 b_add.grid(row=3,column=3)
-
 b_zero = Button(root,text=".",command=lambda:cal("."),width=5,height=2,font="Arial 16",bd=3)
 b_zero.grid(row=4,column=0)
 b_point = Button(root,text="0",command=lambda:cal("0"),width=5,height=2,font="Arial 16",bd=3)
