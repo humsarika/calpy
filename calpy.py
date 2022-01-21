@@ -1,7 +1,7 @@
 from tkinter import *
 root = Tk()
 root.title("Calpy")
-e1=Entry(root,width=16,justify="right",font="serif 25",bd=7,bg="cadet blue")
+e1=Entry(root,width=16,justify="right",font="Arial 25",bd=7,bg="cadet blue")
 e1.grid(row=0,column=0,columnspan=4)
 
 def cal(button):
